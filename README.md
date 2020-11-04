@@ -1,4 +1,4 @@
-# WDCTF-Caddy-PHP-MariaDB
+# Caddy-PHP-MariaDB
 **单纯的Caddy服务,使用的是官方的Caddy镜像: `caddy:latest`**<br>
 **PHP版本是php7-fpm**<br>
 **PHP插件是php7-mysqli**<br>
@@ -11,8 +11,14 @@
 如果是耗时项目将会阻塞<br>
 如果要一直执行请加`&`
 
+# 环境变量
+`$MYSQL_USER`  自定义用户名<br>
+`$MYSQL_PASS`  自定义密码<br>
+`$MYSQL_HOST`  自定义主机名<br>
+`$MYSQL_DATABASE`  自定义数据库名
+
 # 直接使用镜像
 ```bash
-/ > docker pull registry.cn-shanghai.aliyuncs.com/wd_ctf_2020/wdctf_caddy_php
-/ > docker run -p80:80 -v /html:/srv registry.cn-shanghai.aliyuncs.com/wd_ctf_2020/wdctf_caddy_php
+/ > docker pull mlzxgzy/caddy-php-mariadb
+/ > docker run -p80:80 -v /html:/srv mlzxgzy/caddy-php-mariadb
 ```
