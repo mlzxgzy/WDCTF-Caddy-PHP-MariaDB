@@ -17,6 +17,10 @@
 `$MYSQL_HOST`  自定义主机名<br>
 `$MYSQL_DATABASE`  自定义数据库名
 
+# 自定义数据库
+如果想要自定数据库的就直接往`/init.sql`里扔就行<br>
+不过注意,别覆盖,只要追加就行
+
 # 直接使用镜像
 ```bash
 / > docker pull mlzxgzy/caddy-php-mariadb
